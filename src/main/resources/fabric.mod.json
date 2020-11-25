@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "vivatech",
+  "version": "${version}",
+
+  "name": "Vivatech",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "falseresync"
+  ],
+  "contact": {
+    "homepage": "https://falseresync.ru/projects/vivatech",
+    "sources": "https://github.com/falseresync/vivatech",
+    "issues": "https://github.com/falseresync/vivatech/issues",
+    "discord": "https://discord.gg/Wy9ns2RGnY"
+  },
+
+  "license": "MIT",
+  "icon": "assets/vivatech/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.falseresync.vivatech.Vivatech"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
