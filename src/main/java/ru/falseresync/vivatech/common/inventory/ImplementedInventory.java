@@ -1,4 +1,4 @@
-package ru.falseresync.vivatech.inventory;
+package ru.falseresync.vivatech.common.inventory;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;
@@ -129,4 +129,3 @@ public interface ImplementedInventory extends Inventory {
         return true;
     }
 }
-

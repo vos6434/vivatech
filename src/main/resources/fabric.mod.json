@@ -21,7 +21,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ru.falseresync.vivatech.Vivatech"
+      "ru.falseresync.vivatech.common.Vivatech"
+    ],
+    "client": [
+      "ru.falseresync.vivatech.client.VivatechClient"
     ]
   },
 

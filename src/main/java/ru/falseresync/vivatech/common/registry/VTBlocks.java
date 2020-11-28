@@ -1,9 +1,10 @@
-package ru.falseresync.vivatech.registry;
+package ru.falseresync.vivatech.common.registry;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
+import ru.falseresync.vivatech.common.block.AlloyerBlock;
 
 import static ru.falseresync.vivatech.util.IdUtil.id;
 
@@ -23,7 +24,7 @@ public class VTBlocks {
     static {
         COPPER_ORE = new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE));
         ZINC_ORE = new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE));
-        GALITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.REDSTONE_ORE));
+        GALITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_ORE));
 
         COPPER_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
         ZINC_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
@@ -31,7 +32,7 @@ public class VTBlocks {
 
         CRYSTALLINE_HEART = new Block(FabricBlockSettings.copyOf(Blocks.GLASS));
 
-        ALLOYER = new Block(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE));
+        ALLOYER = new AlloyerBlock(FabricBlockSettings.copyOf(Blocks.STONE));
     }
 
     public static void register() {

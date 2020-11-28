@@ -1,4 +1,4 @@
-package ru.falseresync.vivatech.registry;
+package ru.falseresync.vivatech.common.registry;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -61,7 +61,7 @@ public class VTWorldGen {
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, zincOre);
 
         RegistryKey<ConfiguredFeature<?, ?>> galiteOre = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, id("galite_ore"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, galiteOre.getValue(), ZINC_ORE);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, galiteOre.getValue(), GALITE_ORE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, galiteOre);
     }
 }

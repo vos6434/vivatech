@@ -1,8 +1,8 @@
-package ru.falseresync.vivatech.registry;
+package ru.falseresync.vivatech.common.registry;
 
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.registry.Registry;
-import ru.falseresync.vivatech.block.entity.AlloyerBlockEntity;
+import ru.falseresync.vivatech.common.block.entity.AlloyerBlockEntity;
 
 import static ru.falseresync.vivatech.util.IdUtil.id;
 
